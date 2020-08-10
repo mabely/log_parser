@@ -5,18 +5,19 @@ This is parser for server logs that will return two different reports:
 - the most unique views in descending order
 
 ## Requirements
-ruby 2.6.3
-bundler 1.12+
-rbenv
+ruby 2.6.3  
+bundler 1.12+  
+rbenv  
 
 ## Setup
 ```bash
 brew install rbenv
 rbenv install
-bundle install```
+bundle install
+```
 
 ## Usage
-`[path/to/script] [path/to/log/file]`
+`[path/to/script] [path/to/log/file]`  
 eg. `./log_parser.rb webserver.log`
 
 - To run all tests `rspec`
