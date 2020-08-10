@@ -88,6 +88,5 @@ describe LogReader do
         subject.open_file
       end
     end
-
   end
 end

@@ -16,12 +16,12 @@ describe LogPresenter do
     end
     let(:sorted_logs) do
       { '/help_page/1' => 5,
-        '/home' => 2, '/about' => 1, 
+        '/home' => 2, '/about' => 1,
         '/about/2' => 1, '/contact' => 1, '/index' => 1 }
     end
     let(:sorted_uniq_logs) do
       { '/help_page/1' => 3,
-        '/home' => 2, '/about' => 1, 
+        '/home' => 2, '/about' => 1,
         '/about/2' => 1, '/contact' => 1, '/index' => 1 }
     end
 

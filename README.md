@@ -17,7 +17,7 @@ bundle install
 ```
 
 ## Usage
-`[path/to/script] [path/to/log/file]`  
+`./log_parser.rb [path/to/log/file]`  
 eg. `./log_parser.rb webserver.log`
 
 - To run all tests `rspec`
