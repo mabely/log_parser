@@ -8,15 +8,14 @@ class LogPresenter
   end
 
   def generate_report
-    sorted_desc_logs = sort_desc(@logs)
-    output_results(sorted_desc_logs, false)
-    output_results(sorted_desc_logs, true)
+    output_results(sort_desc(false), false)
+    output_results(sort_desc(true), true)
   end
 
   private
 
-  def sort_desc(_log)
-    @logs.sort_by { |_route, ip_add| -ip_add.count }.to_h
+  def sort_desc(uniq_views)
+    @logs.sort_by { |_route, ip_add| uniq_views ? -ip_add.uniq.count : -ip_add.count }.to_h
   end
 
   def output_results(sorted_logs, uniq_views)
