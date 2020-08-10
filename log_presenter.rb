@@ -8,8 +8,10 @@ class LogPresenter
   end
 
   def generate_report
-    output_results(sort_desc(false), false)
-    output_results(sort_desc(true), true)
+    total_views_sorted = sort_desc(false)
+    output_results(total_views_sorted, false)
+    uniq_views_sorted = sort_desc(true)
+    output_results(uniq_views_sorted, true)
   end
 
   private
